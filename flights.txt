@@ -1,0 +1,9 @@
+F001, New York, London, 200
+F002, New Jersey, Ottawa, 150
+F003, Montreal, Ottawa, 200
+F004, Toronto, Ottawa, 0
+F005, London, Germany, 1
+F006, Tokyo, Germany, 100
+F007, Vancouver, Halifax, 
+F008, London, Tokyo, 0
+F009, Ottawa, Montreal, 300
