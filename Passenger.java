@@ -1,53 +1,75 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
 /**
-* Program finds a number using insertion sort.
-*
-* @author Titwech Wal
-* @version 1.0
-* @since   2023-06-09
-*/
-
+ * The Passenger class represents a
+ * passenger with their name, email,
+ * and phone number.
+ */
 public class Passenger {
-    private String name;
-    private String email;
-    private String phone;
 
-    public Passenger(String name, String email, String phone) {
+    /**
+     * This is a private constructor used to satisfy the.
+     * style checker.
+     *
+     * @exception IllegalStateException Utility class.
+     * @see IllegalStateException
+     */
+    private String name;
+
+    /**
+     * This is a private constructor used to satisfy the.
+     * style checker.
+     *
+     * @exception IllegalStateException Utility class.
+     * @see IllegalStateException
+     */
+    private String email;
+
+    /**
+     * This is a private constructor used to satisfy the.
+     * style checker.
+     *
+     * @exception IllegalStateException Utility class.
+     * @see IllegalStateException
+     */
+    private String phoneNumber;
+FUN
+    /**
+     * Constructs a Passenger object with the
+     * specified name, email, and phone number.
+     *
+     * @param name         the name of the passenger
+     * @param email        the email of the passenger
+     * @param phoneNumber  the phone number of the passenger
+     */
+    public Passenger(String name, String email, String phoneNumber) {
         this.name = name;
         this.email = email;
-        this.phone = phone;
+        this.phoneNumber = phoneNumber;
     }
 
-    // Getters and setters
-
+    /**
+     * Returns the name of the passenger.
+     *
+     * @return the name of the passenger
+     */
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    /**
+     * Returns the email of the passenger.
+     *
+     * @return the email of the passenger
+     */
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
+    /**
+     * Returns the phone number of the passenger.
+     *
+     * @return the phone number of the passenger
+     */
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 }

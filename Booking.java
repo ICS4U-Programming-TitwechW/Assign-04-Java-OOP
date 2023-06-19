@@ -1,35 +1,69 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
 /**
-* Program finds a number using insertion sort.
-*
-* @author Titwech Wal
-* @version 1.0
-* @since   2023-06-09
-*/
+ * Stores Booking information.
+ * This class represents a booking
+ * with flight and passenger details.
+ * It provides methods to retrieve the
+ * flight and passenger associated with the booking.
+ *
+ * @author Titwech Wal
+ *
+ * @version 1.0
+ * @since 2023-06-09
+ */
 
 public class Booking {
+
+    /**
+     * This is a private constructor used to satisfy the.
+     * style checker.
+     *
+     * @exception IllegalStateException Utility class.
+     * @see IllegalStateException
+     */
+
+    // Stores the flight associated with the booking
     private Flight flight;
+
+    /**
+     * This is a private constructor used to satisfy the.
+     * style checker.
+     *
+     * @exception IllegalStateException Utility class.
+     * @see IllegalStateException
+     */
+
+    // Stores the passenger associated with the booking
     private Passenger passenger;
+
+    /**
+     * Constructs a new Booking instance.
+     *
+     * @param flight The flight associated with the booking.
+     * @param passenger The passenger associated with the booking.
+     *
+     */
 
     public Booking(Flight flight, Passenger passenger) {
         this.flight = flight;
         this.passenger = passenger;
     }
 
-    public void displayBookingDetails() {
-        System.out.println("Booking details:");
-        System.out.println("Flight: " + flight.getFlightNumber());
-        System.out.println("From: " + flight.getOrigin());
-        System.out.println("To: " + flight.getDestination());
-        System.out.println("Passenger: " + passenger.getName());
-        System.out.println("Email: " + passenger.getEmail());
-        System.out.println("Phone: " + passenger.getPhone());
+    /**
+     * Gets the flight associated with the booking.
+     *
+     * @return The flight.
+     */
+    public Flight getFlight() {
+        return flight;
+    }
+
+    /**
+     * Gets the passenger associated with the booking.
+     *
+     * @return The passenger.
+     */
+
+    public Passenger getPassenger() {
+        return passenger;
     }
 }
